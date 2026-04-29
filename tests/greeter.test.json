@@ -1,0 +1,105 @@
+{
+  "eval_set_id": "multi_agent_greeter_eval_set",
+  "name": "Greeter Agent Tests",
+  "description": "Evaluation set for the greeter sub-agent - tests greetings and introductions",
+  "eval_cases": [
+    {
+      "eval_id": "greeting_hello",
+      "conversation": [
+        {
+          "invocation_id": "e-greeting-hello-001",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hello! How are you?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello! I'm doing great, thank you for asking! Welcome! I'm here to help you. You can chat with me for friendly conversation, or if you have factual questions, our researcher assistant can help with that too. How can I assist you today?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "args": {
+                  "agent_name": "greeter"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": [
+              [
+                "greeter",
+                [
+                  {
+                    "text": "Hello! I'm doing great, thank you for asking! Welcome! I'm here to help you. You can chat with me for friendly conversation, or if you have factual questions, our researcher assistant can help with that too. How can I assist you today?"
+                  }
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "greeting_introduction",
+      "conversation": [
+        {
+          "invocation_id": "e-greeting-intro-001",
+          "user_content": {
+            "parts": [
+              {
+                "text": "My name is Alex, nice to meet you!"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Nice to meet you, Alex! Welcome! I'm happy to chat with you. If you ever have any factual or technical questions, our researcher assistant is also available to help. What can I do for you today?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "args": {
+                  "agent_name": "greeter"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": [
+              [
+                "greeter",
+                [
+                  {
+                    "text": "Nice to meet you, Alex! Welcome! I'm happy to chat with you. If you ever have any factual or technical questions, our researcher assistant is also available to help. What can I do for you today?"
+                  }
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {}
+      }
+    }
+  ]
+}

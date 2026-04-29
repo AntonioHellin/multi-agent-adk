@@ -1,0 +1,1033 @@
+{
+  "eval_set_result_id": "multi_agent_multi_agent_researcher_eval_set_1774866362.06864",
+  "eval_set_result_name": "multi_agent_multi_agent_researcher_eval_set_1774866362.06864",
+  "eval_set_id": "multi_agent_researcher_eval_set",
+  "eval_case_results": [
+    {
+      "eval_set_file": "multi_agent_researcher_eval_set",
+      "eval_set_id": "multi_agent_researcher_eval_set",
+      "eval_id": "research_kubernetes",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.2,
+          "criterion": {
+            "threshold": 0.2
+          },
+          "custom_function_path": null,
+          "score": 0.9714285714285714,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-1af5df7b-0e7d-4a5a-b4e4-9505a7b0fe6d",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Tell me about Kubernetes",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "OK. Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "8zq5otml",
+                          "args": {
+                            "agent_name": "researcher"
+                          },
+                          "name": "transfer_to_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "EpoDCpcDAb4-9vsXslu-W2t5hKCIJ9u65IbSY_ukwb3AMmBMRqiv_a4IgrNUBkKSMyj9iLCBQArBtMjVDgMSavN94YTGIuM73vvgke0_XszBh-aSWBEb0BGYVLgEeBpMKKr5N4v5hyz4wpBn8qMUMu0kHnpCAoso2T7BHqwT0oAvETOEECB5HFLq7fCsnbHqoMknLjkuH51G463VcU-Ky_xh9ibjYGVGiYr0PpLPArskPvxWwQZggEe6yl63HudHCuDcmjOaoySgsLM-2mv2tsYqJxaKWar4kh6CTadylnbOAAedUQmwiiA_2G1kQ50PtZCFwDGG0_adtnykvOX8sf_GCdKLPwcX9rxKgDOrWlIzjvFZFnsLua2naG7sz95vkI0I-bSwIFRttVlD1LNlzknW4h5MjflLD_Sl0ZQVLZX_lqDd4SZH2GDsXORLA_qLsNDB7_npPbvkOb39UUDBb71adqDn6rFj1jbs-yOYGHVjklBUTWmUTODOo2SAN9Pw3ju4szg5HxqgrZJX4-Jpj0SF4iHdcF0a6PMd2ko=",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "8zq5otml",
+                          "name": "transfer_to_agent",
+                          "response": {
+                            "result": null
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "researcher",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "6elyuhke",
+                          "args": {
+                            "topic": "Kubernetes"
+                          },
+                          "name": "lookup_topic",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "EoACCv0BAb4-9vt_xED6bILpdduNujQwdz7AmV7yF2uGGX6koXUmnaXBhvHB8K1kgccmrSMJY249yMgQiol5XvGQnmXY5_G2b_ywTxjhwqLlyxi53ttUgJVoc6mcfGXWrgn9n2ke7QoQMVusHHQxeK8UdpDZ7m6tkY8U9jSIXDL8UIpEegG48j-2o9LXwTbx8l5n9zvrTbLCvO54zZGdmQQJXfT6yYeGwP-cyVK3tMzFZ4-vhObrfagk968yH29WdYY6w1gt18jT0nNwk_80mjp4SXGdf7MorFeKGJPi8BcN3t76BK2tOj7fVJuWOb-pbKQl83nxrscHfe_viXyaMG5flw==",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "researcher",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "6elyuhke",
+                          "name": "lookup_topic",
+                          "response": {
+                            "topic": "Kubernetes",
+                            "summary": "Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1774866359.103942,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are the main orchestrator agent. Your job is to understand the user's intent\nand delegate to the appropriate sub-agent:\n\n- **greeter**: For greetings, introductions, casual conversation, and \"how are you\" type questions.\n  Delegate to greeter when the user is being social or saying hello.\n\n- **researcher**: For factual questions, knowledge lookups, technical questions, and informational queries.\n  Delegate to researcher when the user wants to learn about a topic or needs factual information.\n\nAlways delegate to one of the sub-agents. Do not try to answer questions yourself.\nIf the intent is ambiguous, ask the user to clarify what they need help with.\n\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"The main orchestrator agent that delegates tasks to specialized sub-agents.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: greeter\nAgent description: Handles greetings, introductions, and friendly conversation.\n\n\nAgent name: researcher\nAgent description: Handles factual questions, knowledge lookups, and informational queries.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`greeter`, `researcher`.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "greeter",
+                                  "researcher"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                },
+                "researcher": {
+                  "name": "researcher",
+                  "instructions": "You are a concise research assistant. Your responsibilities are:\n- Answer factual questions about technology, programming, and cloud computing\n- Use the lookup_topic tool to find information about specific topics. Pass only the core topic name as a single word or short phrase (e.g. \"Python\", \"Kubernetes\", \"Google ADK\").\n- Use the get_current_date tool when users ask about the current date or time\n- IMPORTANT: Keep your responses short and concise. Just relay the information from the tool output directly. Do NOT elaborate, add bullet points, or expand beyond what the tool returns.\n- When you don't have enough information, be honest about limitations\n\nAlways use the available tools before answering from your own knowledge.\n\n\nYou are an agent. Your internal name is \"researcher\". The description about you is \"Handles factual questions, knowledge lookups, and informational queries.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: root_agent\nAgent description: The main orchestrator agent that delegates tasks to specialized sub-agents.\n\n\nAgent name: greeter\nAgent description: Handles greetings, introductions, and friendly conversation.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`greeter`, `root_agent`.\n\nIf neither you nor the other agents are best for the question, transfer to your parent agent root_agent.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "root_agent",
+                                  "greeter"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Get the current date and time.\n\nReturns:\n    dict: A dictionary containing the current date and time in ISO format.\n",
+                          "name": "get_current_date",
+                          "parameters": null,
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Look up information about a given topic. Returns a brief summary.\n\nArgs:\n    topic: The topic to look up information about.\n\nReturns:\n    dict: A dictionary containing the topic and a brief summary about it.\n",
+                          "name": "lookup_topic",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "topic": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "topic"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "e-research-k8s-001",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Tell me about Kubernetes",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [
+                {
+                  "id": null,
+                  "args": {
+                    "agent_name": "researcher"
+                  },
+                  "name": "transfer_to_agent",
+                  "partial_args": null,
+                  "will_continue": null
+                },
+                {
+                  "id": null,
+                  "args": {
+                    "topic": "Kubernetes"
+                  },
+                  "name": "lookup_topic",
+                  "partial_args": null,
+                  "will_continue": null
+                }
+              ],
+              "tool_responses": [],
+              "intermediate_responses": [
+                [
+                  "researcher",
+                  [
+                    {
+                      "media_resolution": null,
+                      "code_execution_result": null,
+                      "executable_code": null,
+                      "file_data": null,
+                      "function_call": null,
+                      "function_response": null,
+                      "inline_data": null,
+                      "text": "Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications.",
+                      "thought": null,
+                      "thought_signature": null,
+                      "video_metadata": null
+                    }
+                  ]
+                ]
+              ]
+            },
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.2,
+              "criterion": {
+                "threshold": 0.2
+              },
+              "custom_function_path": null,
+              "score": 0.9714285714285714,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___fdf626c5-1062-4f63-8861-5a3253a0f6a6",
+      "session_details": {
+        "id": "___eval___session___fdf626c5-1062-4f63-8861-5a3253a0f6a6",
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {
+          "__llm_request_key__": "1ffb0b57-0315-4077-b74c-54cd3e09066b"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Tell me about Kubernetes",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-1af5df7b-0e7d-4a5a-b4e4-9505a7b0fe6d",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "78caf9a9-2e53-4b14-b3e2-639203f2a83e",
+            "timestamp": 1774866357.738905
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "8zq5otml",
+                    "args": {
+                      "agent_name": "researcher"
+                    },
+                    "name": "transfer_to_agent",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "EpoDCpcDAb4-9vsXslu-W2t5hKCIJ9u65IbSY_ukwb3AMmBMRqiv_a4IgrNUBkKSMyj9iLCBQArBtMjVDgMSavN94YTGIuM73vvgke0_XszBh-aSWBEb0BGYVLgEeBpMKKr5N4v5hyz4wpBn8qMUMu0kHnpCAoso2T7BHqwT0oAvETOEECB5HFLq7fCsnbHqoMknLjkuH51G463VcU-Ky_xh9ibjYGVGiYr0PpLPArskPvxWwQZggEe6yl63HudHCuDcmjOaoySgsLM-2mv2tsYqJxaKWar4kh6CTadylnbOAAedUQmwiiA_2G1kQ50PtZCFwDGG0_adtnykvOX8sf_GCdKLPwcX9rxKgDOrWlIzjvFZFnsLua2naG7sz95vkI0I-bSwIFRttVlD1LNlzknW4h5MjflLD_Sl0ZQVLZX_lqDd4SZH2GDsXORLA_qLsNDB7_npPbvkOb39UUDBb71adqDn6rFj1jbs-yOYGHVjklBUTWmUTODOo2SAN9Pw3ju4szg5HxqgrZJX4-Jpj0SF4iHdcF0a6PMd2ko=",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "434383de-dce5-4e4b-bc91-4ce5b18b6897"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 21,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 491,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 491
+                }
+              ],
+              "thoughts_token_count": 72,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 584,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-1af5df7b-0e7d-4a5a-b4e4-9505a7b0fe6d",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "434383de-dce5-4e4b-bc91-4ce5b18b6897"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "7e14d6a3-ff13-4297-85cd-261890ef59ec",
+            "timestamp": 1774866357.739411
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "8zq5otml",
+                    "name": "transfer_to_agent",
+                    "response": {
+                      "result": null
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-1af5df7b-0e7d-4a5a-b4e4-9505a7b0fe6d",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": "researcher",
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "1c38f159-2514-43a7-983a-de8803536f85",
+            "timestamp": 1774866359.104166
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "6elyuhke",
+                    "args": {
+                      "topic": "Kubernetes"
+                    },
+                    "name": "lookup_topic",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "EoACCv0BAb4-9vt_xED6bILpdduNujQwdz7AmV7yF2uGGX6koXUmnaXBhvHB8K1kgccmrSMJY249yMgQiol5XvGQnmXY5_G2b_ywTxjhwqLlyxi53ttUgJVoc6mcfGXWrgn9n2ke7QoQMVusHHQxeK8UdpDZ7m6tkY8U9jSIXDL8UIpEegG48j-2o9LXwTbx8l5n9zvrTbLCvO54zZGdmQQJXfT6yYeGwP-cyVK3tMzFZ4-vhObrfagk968yH29WdYY6w1gt18jT0nNwk_80mjp4SXGdf7MorFeKGJPi8BcN3t76BK2tOj7fVJuWOb-pbKQl83nxrscHfe_viXyaMG5flw==",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "2efd458c-a573-4e1f-9987-ae00df0d287a"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 709,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 709
+                }
+              ],
+              "thoughts_token_count": 43,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 769,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-1af5df7b-0e7d-4a5a-b4e4-9505a7b0fe6d",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "2efd458c-a573-4e1f-9987-ae00df0d287a"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "ab44ddca-5652-4519-a8ec-6cc5aaa06614",
+            "timestamp": 1774866359.126402
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "6elyuhke",
+                    "name": "lookup_topic",
+                    "response": {
+                      "topic": "Kubernetes",
+                      "summary": "Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-1af5df7b-0e7d-4a5a-b4e4-9505a7b0fe6d",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "6667c20e-ca94-4383-a3a3-6e46504775d1",
+            "timestamp": 1774866360.351955
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "OK. Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "1ffb0b57-0315-4077-b74c-54cd3e09066b"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 29,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 817,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 817
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 846,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-1af5df7b-0e7d-4a5a-b4e4-9505a7b0fe6d",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "1ffb0b57-0315-4077-b74c-54cd3e09066b"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "92beaf14-174c-46ce-b2aa-8c999408b6f2",
+            "timestamp": 1774866360.354118
+          }
+        ],
+        "last_update_time": 1774866360.354118
+      },
+      "user_id": "test_user"
+    }
+  ],
+  "creation_timestamp": 1774866362.06864
+}

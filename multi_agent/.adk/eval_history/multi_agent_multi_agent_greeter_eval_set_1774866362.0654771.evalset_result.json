@@ -1,0 +1,737 @@
+{
+  "eval_set_result_id": "multi_agent_multi_agent_greeter_eval_set_1774866362.0654771",
+  "eval_set_result_name": "multi_agent_multi_agent_greeter_eval_set_1774866362.0654771",
+  "eval_set_id": "multi_agent_greeter_eval_set",
+  "eval_case_results": [
+    {
+      "eval_set_file": "multi_agent_greeter_eval_set",
+      "eval_set_id": "multi_agent_greeter_eval_set",
+      "eval_id": "greeting_hello",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.2,
+          "criterion": {
+            "threshold": 0.2
+          },
+          "custom_function_path": null,
+          "score": 0.6666666666666666,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-7e3ededb-037e-4236-ac0c-2e64803501bf",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello! How are you?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello! I'm doing wonderful, thank you for asking! It's so nice to meet you.\n\nI'm here to give you a warm welcome and help you get started. I can handle greetings and friendly chat, and if you have any factual or research-related questions, I can point you toward our researcher assistant.\n\nHow can I help you today?",
+                  "thought": null,
+                  "thought_signature": "Eu8CCuwCAb4-9vueQ8Jc2IG2lfGqsg267Ybq-5DRX1W_FyN8NxTO7wLX5nqnWwJkzC8XM6rJJb7yTuirTNTP7FGvSP6zeBTGrarlpGQ7Vg3z-2p3csVgfGeP8T8Bo9VGrUsknQHvPbHr9OglbJZH5OPgi-fBG9uqxawQchSsLoAOpdoG_Jy1KvWv2-Ouk9g-pdQlnaPQiq2Ql4L2BIfOPVcrR9XxGQDrHojvBWFLRbFxMokFTpTXMsrTHaCktpE8kdHZtxqql5Y0HKjN508ahsNaCqOFgntVXZXBaa_IrmbxuPRQ3ZvjIAxgkz7KmK_mI6PPKejCcqgL3l5slM8b7mN-WBIQ2OV51UyaKkjX1oQ0WN8jP97I6w-CTgJ3p3yE1OPUi2lxPpXH-do4gtEaOlo6VVNbNSYXsIBLSg3Ugfv04igbaf60I-rvpTDZpyQb9wiFws8w3mxitwHNiBft3PljLvTWp0v-p-YnoJK-octHrg==",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "e7sw805l",
+                          "args": {
+                            "agent_name": "greeter"
+                          },
+                          "name": "transfer_to_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "ErgCCrUCAb4-9vtvYNprniYFunCfImtedf04jPiMGGZG43xWsuvJ6U19MdoFsCbauiutMwa_3hLJN_ubLQD4kLg_jn-lf0NzGxcgEaBFfLd0D5XICkAVa4YpOoUc1W9ghan4WYxG1BjI3tfe1uOmRXViW5U4KIpQ_CrsE6xd4nbly4fvA0vr1zx9ZmHov2DotVnGuJ4k7KH25eFy-JIWjwCorSS9YHMccdcSyjwSdUTNEbRsnSviNWzREogu0zdajW4gJylOwHmRh9O54rp14gTZRaakXWBrgxp7DyIffQ_MFwBmJfghnuuOXfLFK1Z3KGracohlp1D16HF7OXk3bQX424sFijlOawVp7yhtKo-isB01eOpP9YqGuCmQZNvOU7rl_GrXhLhHo92jA-5we0mx412FomyssdGu",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "e7sw805l",
+                          "name": "transfer_to_agent",
+                          "response": {
+                            "result": null
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1774866355.975299,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are the main orchestrator agent. Your job is to understand the user's intent\nand delegate to the appropriate sub-agent:\n\n- **greeter**: For greetings, introductions, casual conversation, and \"how are you\" type questions.\n  Delegate to greeter when the user is being social or saying hello.\n\n- **researcher**: For factual questions, knowledge lookups, technical questions, and informational queries.\n  Delegate to researcher when the user wants to learn about a topic or needs factual information.\n\nAlways delegate to one of the sub-agents. Do not try to answer questions yourself.\nIf the intent is ambiguous, ask the user to clarify what they need help with.\n\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"The main orchestrator agent that delegates tasks to specialized sub-agents.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: greeter\nAgent description: Handles greetings, introductions, and friendly conversation.\n\n\nAgent name: researcher\nAgent description: Handles factual questions, knowledge lookups, and informational queries.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`greeter`, `researcher`.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "greeter",
+                                  "researcher"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                },
+                "greeter": {
+                  "name": "greeter",
+                  "instructions": "You are a friendly greeter assistant. Your responsibilities are:\n- Warmly greet users when they say hello or introduce themselves\n- Provide friendly, welcoming responses\n- Help users feel comfortable and guide them on what the system can do\n- Keep responses concise and cheerful\n\nWhen users greet you or ask general \"how are you\" questions, respond warmly.\nIf users ask about capabilities, briefly explain that you can help with greetings\nand there's also a researcher assistant available for factual questions.\n\n\nYou are an agent. Your internal name is \"greeter\". The description about you is \"Handles greetings, introductions, and friendly conversation.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: root_agent\nAgent description: The main orchestrator agent that delegates tasks to specialized sub-agents.\n\n\nAgent name: researcher\nAgent description: Handles factual questions, knowledge lookups, and informational queries.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`researcher`, `root_agent`.\n\nIf neither you nor the other agents are best for the question, transfer to your parent agent root_agent.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "root_agent",
+                                  "researcher"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "e-greeting-hello-001",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello! How are you?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello! I'm doing great, thank you for asking! Welcome! I'm here to help you. You can chat with me for friendly conversation, or if you have factual questions, our researcher assistant can help with that too. How can I assist you today?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [
+                {
+                  "id": null,
+                  "args": {
+                    "agent_name": "greeter"
+                  },
+                  "name": "transfer_to_agent",
+                  "partial_args": null,
+                  "will_continue": null
+                }
+              ],
+              "tool_responses": [],
+              "intermediate_responses": [
+                [
+                  "greeter",
+                  [
+                    {
+                      "media_resolution": null,
+                      "code_execution_result": null,
+                      "executable_code": null,
+                      "file_data": null,
+                      "function_call": null,
+                      "function_response": null,
+                      "inline_data": null,
+                      "text": "Hello! I'm doing great, thank you for asking! Welcome! I'm here to help you. You can chat with me for friendly conversation, or if you have factual questions, our researcher assistant can help with that too. How can I assist you today?",
+                      "thought": null,
+                      "thought_signature": null,
+                      "video_metadata": null
+                    }
+                  ]
+                ]
+              ]
+            },
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.2,
+              "criterion": {
+                "threshold": 0.2
+              },
+              "custom_function_path": null,
+              "score": 0.6666666666666666,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___b06d352b-659b-444a-88ca-b98312beefb4",
+      "session_details": {
+        "id": "___eval___session___b06d352b-659b-444a-88ca-b98312beefb4",
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {
+          "__llm_request_key__": "524fbfef-eda6-4529-a484-6f15553c867a"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello! How are you?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-7e3ededb-037e-4236-ac0c-2e64803501bf",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "1655442a-a8cc-4649-b2a4-24ff82b20d95",
+            "timestamp": 1774866354.079006
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "e7sw805l",
+                    "args": {
+                      "agent_name": "greeter"
+                    },
+                    "name": "transfer_to_agent",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "ErgCCrUCAb4-9vtvYNprniYFunCfImtedf04jPiMGGZG43xWsuvJ6U19MdoFsCbauiutMwa_3hLJN_ubLQD4kLg_jn-lf0NzGxcgEaBFfLd0D5XICkAVa4YpOoUc1W9ghan4WYxG1BjI3tfe1uOmRXViW5U4KIpQ_CrsE6xd4nbly4fvA0vr1zx9ZmHov2DotVnGuJ4k7KH25eFy-JIWjwCorSS9YHMccdcSyjwSdUTNEbRsnSviNWzREogu0zdajW4gJylOwHmRh9O54rp14gTZRaakXWBrgxp7DyIffQ_MFwBmJfghnuuOXfLFK1Z3KGracohlp1D16HF7OXk3bQX424sFijlOawVp7yhtKo-isB01eOpP9YqGuCmQZNvOU7rl_GrXhLhHo92jA-5we0mx412FomyssdGu",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "bbf5e8f0-1695-4ee4-af2e-73b08b51b915"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 21,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 493,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 493
+                }
+              ],
+              "thoughts_token_count": 55,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 569,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-7e3ededb-037e-4236-ac0c-2e64803501bf",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "bbf5e8f0-1695-4ee4-af2e-73b08b51b915"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "8c87222c-6b19-48b8-bc16-1bfb444868d7",
+            "timestamp": 1774866354.079727
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "e7sw805l",
+                    "name": "transfer_to_agent",
+                    "response": {
+                      "result": null
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-7e3ededb-037e-4236-ac0c-2e64803501bf",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": "greeter",
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "7b1ae184-f355-4d2d-a22b-725e49d68be5",
+            "timestamp": 1774866355.975909
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello! I'm doing wonderful, thank you for asking! It's so nice to meet you.\n\nI'm here to give you a warm welcome and help you get started. I can handle greetings and friendly chat, and if you have any factual or research-related questions, I can point you toward our researcher assistant.\n\nHow can I help you today?",
+                  "thought": null,
+                  "thought_signature": "Eu8CCuwCAb4-9vueQ8Jc2IG2lfGqsg267Ybq-5DRX1W_FyN8NxTO7wLX5nqnWwJkzC8XM6rJJb7yTuirTNTP7FGvSP6zeBTGrarlpGQ7Vg3z-2p3csVgfGeP8T8Bo9VGrUsknQHvPbHr9OglbJZH5OPgi-fBG9uqxawQchSsLoAOpdoG_Jy1KvWv2-Ouk9g-pdQlnaPQiq2Ql4L2BIfOPVcrR9XxGQDrHojvBWFLRbFxMokFTpTXMsrTHaCktpE8kdHZtxqql5Y0HKjN508ahsNaCqOFgntVXZXBaa_IrmbxuPRQ3ZvjIAxgkz7KmK_mI6PPKejCcqgL3l5slM8b7mN-WBIQ2OV51UyaKkjX1oQ0WN8jP97I6w-CTgJ3p3yE1OPUi2lxPpXH-do4gtEaOlo6VVNbNSYXsIBLSg3Ugfv04igbaf60I-rvpTDZpyQb9wiFws8w3mxitwHNiBft3PljLvTWp0v-p-YnoJK-octHrg==",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "524fbfef-eda6-4529-a484-6f15553c867a"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 76,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 531,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 531
+                }
+              ],
+              "thoughts_token_count": 80,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 687,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-7e3ededb-037e-4236-ac0c-2e64803501bf",
+            "author": "greeter",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "524fbfef-eda6-4529-a484-6f15553c867a"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "f3109004-9b15-4d69-8029-9ae6ac454ddd",
+            "timestamp": 1774866355.97729
+          }
+        ],
+        "last_update_time": 1774866355.97729
+      },
+      "user_id": "test_user"
+    }
+  ],
+  "creation_timestamp": 1774866362.0654771
+}

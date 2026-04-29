@@ -1,0 +1,9 @@
+# Google Agent Development Kit (with evaluation extras)
+google-adk[eval]>=1.26.0
+
+# General utilities
+python-dotenv>=1.2.2
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=1.0.0

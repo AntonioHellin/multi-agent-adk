@@ -1,0 +1,172 @@
+{
+  "eval_set_id": "multi_agent_researcher_eval_set",
+  "name": "Researcher Agent Tests",
+  "description": "Evaluation set for the researcher sub-agent - tests factual questions and tool usage",
+  "eval_cases": [
+    {
+      "eval_id": "research_python",
+      "conversation": [
+        {
+          "invocation_id": "e-research-python-001",
+          "user_content": {
+            "parts": [
+              {
+                "text": "What is Python?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum in 1991."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "args": {
+                  "agent_name": "researcher"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "args": {
+                  "topic": "Python"
+                },
+                "name": "lookup_topic"
+              }
+            ],
+            "intermediate_responses": [
+              [
+                "researcher",
+                [
+                  {
+                    "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum in 1991."
+                  }
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "research_kubernetes",
+      "conversation": [
+        {
+          "invocation_id": "e-research-k8s-001",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Tell me about Kubernetes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "args": {
+                  "agent_name": "researcher"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "args": {
+                  "topic": "Kubernetes"
+                },
+                "name": "lookup_topic"
+              }
+            ],
+            "intermediate_responses": [
+              [
+                "researcher",
+                [
+                  {
+                    "text": "Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications."
+                  }
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "research_adk",
+      "conversation": [
+        {
+          "invocation_id": "e-research-adk-001",
+          "user_content": {
+            "parts": [
+              {
+                "text": "What is Google ADK?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "args": {
+                  "agent_name": "researcher"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "args": {
+                  "topic": "Google ADK"
+                },
+                "name": "lookup_topic"
+              }
+            ],
+            "intermediate_responses": [
+              [
+                "researcher",
+                [
+                  {
+                    "text": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs."
+                  }
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {}
+      }
+    }
+  ]
+}

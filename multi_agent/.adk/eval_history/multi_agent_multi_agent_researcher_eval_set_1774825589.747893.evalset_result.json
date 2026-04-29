@@ -1,0 +1,1033 @@
+{
+  "eval_set_result_id": "multi_agent_multi_agent_researcher_eval_set_1774825589.747893",
+  "eval_set_result_name": "multi_agent_multi_agent_researcher_eval_set_1774825589.747893",
+  "eval_set_id": "multi_agent_researcher_eval_set",
+  "eval_case_results": [
+    {
+      "eval_set_file": "multi_agent_researcher_eval_set",
+      "eval_set_id": "multi_agent_researcher_eval_set",
+      "eval_id": "research_adk",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.2,
+          "criterion": {
+            "threshold": 0.2
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-ee927471-9cbe-4e53-ac21-5cbcc385ef9b",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "What is Google ADK?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "sxhdx29u",
+                          "args": {
+                            "agent_name": "researcher"
+                          },
+                          "name": "transfer_to_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "EqIDCp8DAb4-9vvosKowYvUTo0ZUt9WuZGjDOLi4WJBEi2YPAOV2KuBuq3tf_OnGJOxeNirf_u2Pk_lYd6Ljc3SQiuvA1hDYN0l16m9SoR3pkzPxnTs_u6aeaAI0gb7JrA70cQq6HZRXeBKLHHOzfqHbBN0Sq5ldXuQRoJyupZ64JzZu_1gL-9dwsalZPpdl7viuyW7mr-R9U-tjWjLdSiDdj4nZMHEayyV-CeF5W5U6NiAGKhYxDpp3E5Dq8eQ1n6j9VrrHE7AusRb0sO9C0oAP1DHO3SYmsHWqfyg8NVQLW59XpsHsn901HcEpl15tMxLFXUniEL5YhOhitNVH2yYXQPRjEnQJpkjDEQ-UW9InYUCVKT24pnLBPPhXzGlUnWeLkPyQV3qeFHFHDZJgDsKaP22mE9jT2M12pm6BVDwEH8uiB8gGugp_PFQKAO_55SuuE2NI9XTh5rthXXFZA3F-QFfddNMvUTCd6gfQP1SGTNJjcbHIbGPfF7HYpdewQRnPoPUOWVSVrtqYnkpDYdQg8QAonvFLAa_NsZq0b8tIWmDdlw==",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "sxhdx29u",
+                          "name": "transfer_to_agent",
+                          "response": {
+                            "result": null
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "researcher",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "bcl5jgib",
+                          "args": {
+                            "topic": "Google ADK"
+                          },
+                          "name": "lookup_topic",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "EogCCoUCAb4-9vsyMV51vSCTLldAIpenD1tiusuCjiiDY4W4002j58NlZvX5pKib-kK36eq_qO01zqkq-K8p023QB1cQ2SAs5lGZt_clHMl6RPIY4DTIL7_rkzLiLjWS_IeLT9PNoxi5peZ3w2okQuCS5_xs5tmeqIbx6QXrk847rIsx6ye8haVcpCQhd7IOlBUMWTNseNPnfoSLFlzHHZpjBEr7bqIu_ui5yCoHRf_55K13ZKAfb6U4d7bTTQazUTX0uf6RyCRH-yZXSJZzFyczZZR0RVyfn7C0sHSmnSbwnf15oBd2AXbVYM2_04cBxnqH84kvCk8bnJDF29F4GG5Ca5PLqTRRe40m",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "researcher",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "bcl5jgib",
+                          "name": "lookup_topic",
+                          "response": {
+                            "topic": "Google ADK",
+                            "summary": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1774825587.152366,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are the main orchestrator agent. Your job is to understand the user's intent\nand delegate to the appropriate sub-agent:\n\n- **greeter**: For greetings, introductions, casual conversation, and \"how are you\" type questions.\n  Delegate to greeter when the user is being social or saying hello.\n\n- **researcher**: For factual questions, knowledge lookups, technical questions, and informational queries.\n  Delegate to researcher when the user wants to learn about a topic or needs factual information.\n\nAlways delegate to one of the sub-agents. Do not try to answer questions yourself.\nIf the intent is ambiguous, ask the user to clarify what they need help with.\n\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"The main orchestrator agent that delegates tasks to specialized sub-agents.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: greeter\nAgent description: Handles greetings, introductions, and friendly conversation.\n\n\nAgent name: researcher\nAgent description: Handles factual questions, knowledge lookups, and informational queries.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`greeter`, `researcher`.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "greeter",
+                                  "researcher"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                },
+                "researcher": {
+                  "name": "researcher",
+                  "instructions": "You are a concise research assistant. Your responsibilities are:\n- Answer factual questions about technology, programming, and cloud computing\n- Use the lookup_topic tool to find information about specific topics. Pass only the core topic name as a single word or short phrase (e.g. \"Python\", \"Kubernetes\", \"Google ADK\").\n- Use the get_current_date tool when users ask about the current date or time\n- IMPORTANT: Keep your responses short and concise. Just relay the information from the tool output directly. Do NOT elaborate, add bullet points, or expand beyond what the tool returns.\n- When you don't have enough information, be honest about limitations\n\nAlways use the available tools before answering from your own knowledge.\n\n\nYou are an agent. Your internal name is \"researcher\". The description about you is \"Handles factual questions, knowledge lookups, and informational queries.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: root_agent\nAgent description: The main orchestrator agent that delegates tasks to specialized sub-agents.\n\n\nAgent name: greeter\nAgent description: Handles greetings, introductions, and friendly conversation.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`greeter`, `root_agent`.\n\nIf neither you nor the other agents are best for the question, transfer to your parent agent root_agent.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "root_agent",
+                                  "greeter"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Get the current date and time.\n\nReturns:\n    dict: A dictionary containing the current date and time in ISO format.\n",
+                          "name": "get_current_date",
+                          "parameters": null,
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Look up information about a given topic. Returns a brief summary.\n\nArgs:\n    topic: The topic to look up information about.\n\nReturns:\n    dict: A dictionary containing the topic and a brief summary about it.\n",
+                          "name": "lookup_topic",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "topic": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "topic"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "e-research-adk-001",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "What is Google ADK?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [
+                {
+                  "id": null,
+                  "args": {
+                    "agent_name": "researcher"
+                  },
+                  "name": "transfer_to_agent",
+                  "partial_args": null,
+                  "will_continue": null
+                },
+                {
+                  "id": null,
+                  "args": {
+                    "topic": "Google ADK"
+                  },
+                  "name": "lookup_topic",
+                  "partial_args": null,
+                  "will_continue": null
+                }
+              ],
+              "tool_responses": [],
+              "intermediate_responses": [
+                [
+                  "researcher",
+                  [
+                    {
+                      "media_resolution": null,
+                      "code_execution_result": null,
+                      "executable_code": null,
+                      "file_data": null,
+                      "function_call": null,
+                      "function_response": null,
+                      "inline_data": null,
+                      "text": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs.",
+                      "thought": null,
+                      "thought_signature": null,
+                      "video_metadata": null
+                    }
+                  ]
+                ]
+              ]
+            },
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.2,
+              "criterion": {
+                "threshold": 0.2
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___bf41b5bd-606c-4d54-ac9b-a14efac188bf",
+      "session_details": {
+        "id": "___eval___session___bf41b5bd-606c-4d54-ac9b-a14efac188bf",
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {
+          "__llm_request_key__": "751077d8-386e-4291-be32-11bbd9424b9e"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "What is Google ADK?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-ee927471-9cbe-4e53-ac21-5cbcc385ef9b",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "f6bd431b-052e-4229-9317-19fb11fe8325",
+            "timestamp": 1774825585.830683
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "sxhdx29u",
+                    "args": {
+                      "agent_name": "researcher"
+                    },
+                    "name": "transfer_to_agent",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "EqIDCp8DAb4-9vvosKowYvUTo0ZUt9WuZGjDOLi4WJBEi2YPAOV2KuBuq3tf_OnGJOxeNirf_u2Pk_lYd6Ljc3SQiuvA1hDYN0l16m9SoR3pkzPxnTs_u6aeaAI0gb7JrA70cQq6HZRXeBKLHHOzfqHbBN0Sq5ldXuQRoJyupZ64JzZu_1gL-9dwsalZPpdl7viuyW7mr-R9U-tjWjLdSiDdj4nZMHEayyV-CeF5W5U6NiAGKhYxDpp3E5Dq8eQ1n6j9VrrHE7AusRb0sO9C0oAP1DHO3SYmsHWqfyg8NVQLW59XpsHsn901HcEpl15tMxLFXUniEL5YhOhitNVH2yYXQPRjEnQJpkjDEQ-UW9InYUCVKT24pnLBPPhXzGlUnWeLkPyQV3qeFHFHDZJgDsKaP22mE9jT2M12pm6BVDwEH8uiB8gGugp_PFQKAO_55SuuE2NI9XTh5rthXXFZA3F-QFfddNMvUTCd6gfQP1SGTNJjcbHIbGPfF7HYpdewQRnPoPUOWVSVrtqYnkpDYdQg8QAonvFLAa_NsZq0b8tIWmDdlw==",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "d7643ba6-bd4c-4c1a-93fc-4d9fa6b599cd"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 21,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 493,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 493
+                }
+              ],
+              "thoughts_token_count": 80,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 594,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-ee927471-9cbe-4e53-ac21-5cbcc385ef9b",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "d7643ba6-bd4c-4c1a-93fc-4d9fa6b599cd"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "a31e13cc-b926-41e9-9151-9e5fa71bb96f",
+            "timestamp": 1774825585.831285
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "sxhdx29u",
+                    "name": "transfer_to_agent",
+                    "response": {
+                      "result": null
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-ee927471-9cbe-4e53-ac21-5cbcc385ef9b",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": "researcher",
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "1946a7db-d4a8-4ba1-a4b8-fb101916a560",
+            "timestamp": 1774825587.182507
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "bcl5jgib",
+                    "args": {
+                      "topic": "Google ADK"
+                    },
+                    "name": "lookup_topic",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "EogCCoUCAb4-9vsyMV51vSCTLldAIpenD1tiusuCjiiDY4W4002j58NlZvX5pKib-kK36eq_qO01zqkq-K8p023QB1cQ2SAs5lGZt_clHMl6RPIY4DTIL7_rkzLiLjWS_IeLT9PNoxi5peZ3w2okQuCS5_xs5tmeqIbx6QXrk847rIsx6ye8haVcpCQhd7IOlBUMWTNseNPnfoSLFlzHHZpjBEr7bqIu_ui5yCoHRf_55K13ZKAfb6U4d7bTTQazUTX0uf6RyCRH-yZXSJZzFyczZZR0RVyfn7C0sHSmnSbwnf15oBd2AXbVYM2_04cBxnqH84kvCk8bnJDF29F4GG5Ca5PLqTRRe40m",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "44a2293a-4ace-40b2-b3dc-c56d78c6750d"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 18,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 711,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 711
+                }
+              ],
+              "thoughts_token_count": 57,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 786,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-ee927471-9cbe-4e53-ac21-5cbcc385ef9b",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "44a2293a-4ace-40b2-b3dc-c56d78c6750d"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "629b4853-a817-4fa2-ae8d-137ed9d370ff",
+            "timestamp": 1774825587.18378
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "bcl5jgib",
+                    "name": "lookup_topic",
+                    "response": {
+                      "topic": "Google ADK",
+                      "summary": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-ee927471-9cbe-4e53-ac21-5cbcc385ef9b",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "741fbe16-e2ee-4cda-b18e-19b71848bf41",
+            "timestamp": 1774825588.571132
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Google Agent Development Kit (ADK) is a framework for building, evaluating, and deploying AI agents powered by Gemini and other LLMs.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "751077d8-386e-4291-be32-11bbd9424b9e"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 28,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 835,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 835
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 863,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-ee927471-9cbe-4e53-ac21-5cbcc385ef9b",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "751077d8-386e-4291-be32-11bbd9424b9e"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "f4eb9700-a7b9-4a62-bf5b-872ec88c05e5",
+            "timestamp": 1774825588.573114
+          }
+        ],
+        "last_update_time": 1774825588.573114
+      },
+      "user_id": "test_user"
+    }
+  ],
+  "creation_timestamp": 1774825589.747893
+}

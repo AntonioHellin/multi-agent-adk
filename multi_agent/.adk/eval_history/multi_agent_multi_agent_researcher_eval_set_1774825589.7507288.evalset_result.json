@@ -1,0 +1,1033 @@
+{
+  "eval_set_result_id": "multi_agent_multi_agent_researcher_eval_set_1774825589.7507288",
+  "eval_set_result_name": "multi_agent_multi_agent_researcher_eval_set_1774825589.7507288",
+  "eval_set_id": "multi_agent_researcher_eval_set",
+  "eval_case_results": [
+    {
+      "eval_set_file": "multi_agent_researcher_eval_set",
+      "eval_set_id": "multi_agent_researcher_eval_set",
+      "eval_id": "research_python",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.2,
+          "criterion": {
+            "threshold": 0.2
+          },
+          "custom_function_path": null,
+          "score": 0.9545454545454545,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-2a44a81d-9189-4357-9359-79ce3b7f9d7c",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "What is Python?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum in 1991.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "wu5es472",
+                          "args": {
+                            "agent_name": "researcher"
+                          },
+                          "name": "transfer_to_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "EqgDCqUDAb4-9vtse09XZHiVkdzuFA31SW5FktPdEA00o7_AUHBAgq8iXW4MhKBQx7kmhr7R5HVE7mOm7kHEZ_X7mPIdpcQGPUSqwuBHJSWhZ9rL0Y1Cz94QvUYxYvDZ-cXYMoiHk6SWbD2iOdLPTaMQIBv7-Gqaa4fkAFYTmJDBIccYRF5_UrZom4bNz1B_soQbrcCRqSh4jFru88HM5y95U4qcFyqMvZ6THcZxZhF-YzKWxENtjgnIIuPQ24thmzzAg9dooLPwY5l2vh3KK7vUr83RL71PmSzoBEHrrEd-lbFRYcqxos9Rk_0fjoKY9j9i0qHUNDoHr55D5XBmKrJZQQ6p5OPkIG-fa7fv5s1P4MVBOr5NqY1al1PAcJ-5r_uBug3vS5tbrCurWl9xjiBvv-l7E-RDQe3bZ_hVDH67wIsxMmrcglgxgRC5don7guQf6lylln-LDrEVdBG0DaorWZAHnqkaItU-FggR0Lx5YiUhov4zZNw1RT0ZU2wF8ySqU9epvhNKCPPsj-e8RHExefEk4jSOO47LMGxlzQboTpwfuQuS1-VYHA==",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "wu5es472",
+                          "name": "transfer_to_agent",
+                          "response": {
+                            "result": null
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "researcher",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "5bgp4tc7",
+                          "args": {
+                            "topic": "Python"
+                          },
+                          "name": "lookup_topic",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "EoMCCoACAb4-9vsfhfYxIVK8svN41eFbWWrndMtOVZa7jFy08meaOBGOqHlaNP62ghIcxcWNCpaFX_tbojVVifGXWs7ov4w9gjrAbU0qcT7NiCUmSDm7xAjh9d-E4ypWdecM6T5gqvDPBYTyysBwyZTSvcXmjJg2DrAjMrkpKpxMSwaEwsUeMg8Cfq7MD6hbMVC9Cg3hVOrsAmx5DPYqITChcnOMFATpw5yYunSmBr8XbthW748748XE02OxPvLRbyxp9OFX5zYVhlRXNRhvuOSTSCnklcLLhsM_L9V9Ckx0uSrzkb0E7bX64BjeToqSsKyo_hJUyoLLmkHixOy7_MJvcG6nFg==",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "researcher",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "5bgp4tc7",
+                          "name": "lookup_topic",
+                          "response": {
+                            "topic": "Python",
+                            "summary": "Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum in 1991."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1774825587.43853,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are the main orchestrator agent. Your job is to understand the user's intent\nand delegate to the appropriate sub-agent:\n\n- **greeter**: For greetings, introductions, casual conversation, and \"how are you\" type questions.\n  Delegate to greeter when the user is being social or saying hello.\n\n- **researcher**: For factual questions, knowledge lookups, technical questions, and informational queries.\n  Delegate to researcher when the user wants to learn about a topic or needs factual information.\n\nAlways delegate to one of the sub-agents. Do not try to answer questions yourself.\nIf the intent is ambiguous, ask the user to clarify what they need help with.\n\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"The main orchestrator agent that delegates tasks to specialized sub-agents.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: greeter\nAgent description: Handles greetings, introductions, and friendly conversation.\n\n\nAgent name: researcher\nAgent description: Handles factual questions, knowledge lookups, and informational queries.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`greeter`, `researcher`.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "greeter",
+                                  "researcher"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                },
+                "researcher": {
+                  "name": "researcher",
+                  "instructions": "You are a concise research assistant. Your responsibilities are:\n- Answer factual questions about technology, programming, and cloud computing\n- Use the lookup_topic tool to find information about specific topics. Pass only the core topic name as a single word or short phrase (e.g. \"Python\", \"Kubernetes\", \"Google ADK\").\n- Use the get_current_date tool when users ask about the current date or time\n- IMPORTANT: Keep your responses short and concise. Just relay the information from the tool output directly. Do NOT elaborate, add bullet points, or expand beyond what the tool returns.\n- When you don't have enough information, be honest about limitations\n\nAlways use the available tools before answering from your own knowledge.\n\n\nYou are an agent. Your internal name is \"researcher\". The description about you is \"Handles factual questions, knowledge lookups, and informational queries.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: root_agent\nAgent description: The main orchestrator agent that delegates tasks to specialized sub-agents.\n\n\nAgent name: greeter\nAgent description: Handles greetings, introductions, and friendly conversation.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`greeter`, `root_agent`.\n\nIf neither you nor the other agents are best for the question, transfer to your parent agent root_agent.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "root_agent",
+                                  "greeter"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Get the current date and time.\n\nReturns:\n    dict: A dictionary containing the current date and time in ISO format.\n",
+                          "name": "get_current_date",
+                          "parameters": null,
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Look up information about a given topic. Returns a brief summary.\n\nArgs:\n    topic: The topic to look up information about.\n\nReturns:\n    dict: A dictionary containing the topic and a brief summary about it.\n",
+                          "name": "lookup_topic",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "topic": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "topic"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": null,
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "e-research-python-001",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "What is Python?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum in 1991.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [
+                {
+                  "id": null,
+                  "args": {
+                    "agent_name": "researcher"
+                  },
+                  "name": "transfer_to_agent",
+                  "partial_args": null,
+                  "will_continue": null
+                },
+                {
+                  "id": null,
+                  "args": {
+                    "topic": "Python"
+                  },
+                  "name": "lookup_topic",
+                  "partial_args": null,
+                  "will_continue": null
+                }
+              ],
+              "tool_responses": [],
+              "intermediate_responses": [
+                [
+                  "researcher",
+                  [
+                    {
+                      "media_resolution": null,
+                      "code_execution_result": null,
+                      "executable_code": null,
+                      "file_data": null,
+                      "function_call": null,
+                      "function_response": null,
+                      "inline_data": null,
+                      "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum in 1991.",
+                      "thought": null,
+                      "thought_signature": null,
+                      "video_metadata": null
+                    }
+                  ]
+                ]
+              ]
+            },
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.2,
+              "criterion": {
+                "threshold": 0.2
+              },
+              "custom_function_path": null,
+              "score": 0.9545454545454545,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___aed6efa7-5a86-47f5-8294-0cb2528c6a45",
+      "session_details": {
+        "id": "___eval___session___aed6efa7-5a86-47f5-8294-0cb2528c6a45",
+        "app_name": "multi_agent",
+        "user_id": "test_user",
+        "state": {
+          "__llm_request_key__": "24049c0f-4701-4e77-9d09-66df6c3d9b17"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "What is Python?",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-2a44a81d-9189-4357-9359-79ce3b7f9d7c",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "3f906c88-e47d-41fa-8c40-58604261b925",
+            "timestamp": 1774825585.789473
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "wu5es472",
+                    "args": {
+                      "agent_name": "researcher"
+                    },
+                    "name": "transfer_to_agent",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "EqgDCqUDAb4-9vtse09XZHiVkdzuFA31SW5FktPdEA00o7_AUHBAgq8iXW4MhKBQx7kmhr7R5HVE7mOm7kHEZ_X7mPIdpcQGPUSqwuBHJSWhZ9rL0Y1Cz94QvUYxYvDZ-cXYMoiHk6SWbD2iOdLPTaMQIBv7-Gqaa4fkAFYTmJDBIccYRF5_UrZom4bNz1B_soQbrcCRqSh4jFru88HM5y95U4qcFyqMvZ6THcZxZhF-YzKWxENtjgnIIuPQ24thmzzAg9dooLPwY5l2vh3KK7vUr83RL71PmSzoBEHrrEd-lbFRYcqxos9Rk_0fjoKY9j9i0qHUNDoHr55D5XBmKrJZQQ6p5OPkIG-fa7fv5s1P4MVBOr5NqY1al1PAcJ-5r_uBug3vS5tbrCurWl9xjiBvv-l7E-RDQe3bZ_hVDH67wIsxMmrcglgxgRC5don7guQf6lylln-LDrEVdBG0DaorWZAHnqkaItU-FggR0Lx5YiUhov4zZNw1RT0ZU2wF8ySqU9epvhNKCPPsj-e8RHExefEk4jSOO47LMGxlzQboTpwfuQuS1-VYHA==",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "5034a4d5-1928-46b8-bd73-a0281b05c3dd"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 21,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 491,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 491
+                }
+              ],
+              "thoughts_token_count": 85,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 597,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-2a44a81d-9189-4357-9359-79ce3b7f9d7c",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "5034a4d5-1928-46b8-bd73-a0281b05c3dd"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "ff2ef5d0-434f-4b8c-943e-8e6777a1c1d5",
+            "timestamp": 1774825585.790178
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "wu5es472",
+                    "name": "transfer_to_agent",
+                    "response": {
+                      "result": null
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-2a44a81d-9189-4357-9359-79ce3b7f9d7c",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": "researcher",
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "e81a1c20-570b-44fa-9079-e118f29cba64",
+            "timestamp": 1774825587.439049
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "5bgp4tc7",
+                    "args": {
+                      "topic": "Python"
+                    },
+                    "name": "lookup_topic",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "EoMCCoACAb4-9vsfhfYxIVK8svN41eFbWWrndMtOVZa7jFy08meaOBGOqHlaNP62ghIcxcWNCpaFX_tbojVVifGXWs7ov4w9gjrAbU0qcT7NiCUmSDm7xAjh9d-E4ypWdecM6T5gqvDPBYTyysBwyZTSvcXmjJg2DrAjMrkpKpxMSwaEwsUeMg8Cfq7MD6hbMVC9Cg3hVOrsAmx5DPYqITChcnOMFATpw5yYunSmBr8XbthW748748XE02OxPvLRbyxp9OFX5zYVhlRXNRhvuOSTSCnklcLLhsM_L9V9Ckx0uSrzkb0E7bX64BjeToqSsKyo_hJUyoLLmkHixOy7_MJvcG6nFg==",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "fb11643d-65fc-4709-90e2-2590c8a90d40"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 16,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 709,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 709
+                }
+              ],
+              "thoughts_token_count": 51,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 776,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-2a44a81d-9189-4357-9359-79ce3b7f9d7c",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "fb11643d-65fc-4709-90e2-2590c8a90d40"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "5b0cf2c8-2c57-4a7a-a3ad-d0ef4788d895",
+            "timestamp": 1774825587.441
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "5bgp4tc7",
+                    "name": "lookup_topic",
+                    "response": {
+                      "topic": "Python",
+                      "summary": "Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum in 1991."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-2a44a81d-9189-4357-9359-79ce3b7f9d7c",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "ee33128f-9da3-4262-95c0-daa12ad21629",
+            "timestamp": 1774825588.827182
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum in 1991.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "24049c0f-4701-4e77-9d09-66df6c3d9b17"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 30,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 825,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 825
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 855,
+              "traffic_type": null
+            },
+            "live_session_resumption_update": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-2a44a81d-9189-4357-9359-79ce3b7f9d7c",
+            "author": "researcher",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "24049c0f-4701-4e77-9d09-66df6c3d9b17"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "41009421-61fc-45a7-8a83-0a3fe22d3cce",
+            "timestamp": 1774825588.828435
+          }
+        ],
+        "last_update_time": 1774825588.828435
+      },
+      "user_id": "test_user"
+    }
+  ],
+  "creation_timestamp": 1774825589.7507288
+}
