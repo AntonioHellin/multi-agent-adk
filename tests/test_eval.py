@@ -30,6 +30,9 @@ async def test_researcher_agent():
     )
 
 
+# Keep this aggregate test in addition to the focused tests above: ADK accepts
+# a directory of evaluation fixtures, which helps catch cross-fixture regressions
+# when new scenarios are added under tests/.
 @pytest.mark.asyncio
 async def test_all():
     """Run all test files in the tests directory."""

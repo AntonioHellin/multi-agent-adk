@@ -12,6 +12,9 @@ from google.adk.agents import Agent
 from .sub_agents.greeter import greeter_agent
 from .sub_agents.researcher import researcher_agent
 
+# The root agent does not answer directly. It routes every request to a
+# specialized sub-agent so each prompt stays small and responsibility boundaries
+# remain clear as more agents are added.
 root_agent = Agent(
     name="root_agent",
     model="gemini-3-flash-preview",
@@ -28,5 +31,7 @@ and delegate to the appropriate sub-agent:
 Always delegate to one of the sub-agents. Do not try to answer questions yourself.
 If the intent is ambiguous, ask the user to clarify what they need help with.
 """,
+    # Order matters only for readability here; the routing decision is governed
+    # by the instruction above, while this list defines which agents ADK may call.
     sub_agents=[greeter_agent, researcher_agent],
 )
