@@ -8,18 +8,18 @@ from google.adk.agents import Agent
 def get_current_date() -> dict:
     """Return the host machine's current date and time for ADK tool calls.
 
-    ADK exposes plain Python functions in the ``tools`` list to the LLM. The
-    return value must therefore be JSON-serializable so the model can consume it
-    reliably. Keeping the date, time, and weekday as separate strings avoids
-    locale-dependent parsing by the agent and by the JSON evaluation fixtures.
+    ADK serializes tool outputs before passing them back to the model, so keep
+    the payload limited to simple JSON-compatible values. Returning preformatted
+    strings for the date, time, and weekday gives the agent deterministic fields
+    to relay and avoids test fixtures depending on locale-specific parsing.
 
     Returns:
         dict: Current date, current time, and day of week as formatted strings.
     """
     from datetime import datetime
 
-    # Use the system clock at invocation time so repeated tool calls during a
-    # long-running agent session do not accidentally reuse stale timestamps.
+    # Read the clock inside the tool call rather than at import time; otherwise a
+    # long-lived agent process could return the startup timestamp to later users.
     now = datetime.now()
     return {
         "date": now.strftime("%Y-%m-%d"),
@@ -31,11 +31,12 @@ def get_current_date() -> dict:
 def lookup_topic(topic: str) -> dict:
     """Look up a short, deterministic summary for a requested topic.
 
-    This intentionally uses an in-memory knowledge base instead of live web
-    access so automated ADK evaluations remain fast, reproducible, and free of
-    network dependencies. Matching is substring-based, which lets prompts such
-    as "tell me about Python" resolve to the ``python`` entry while still
-    preserving the user's original topic text in the response.
+    The lookup table is deliberately small and local. That makes evaluation runs
+    reproducible: summaries do not drift with external services, and failures are
+    limited to this module instead of network availability. Topic matching is
+    case-insensitive and substring-based, so natural phrases such as "tell me
+    about Python" still resolve to the ``python`` entry while the returned
+    payload preserves the user's original wording.
 
     Args:
         topic: The topic to look up information about.
@@ -54,18 +55,19 @@ def lookup_topic(topic: str) -> dict:
         "machine learning": "Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed.",
     }
 
-    # Normalize once so every dictionary key can be compared case-insensitively.
+    # Normalize the user's phrase once, then compare every canonical key against
+    # the same lowercase value for predictable case-insensitive matching.
     topic_lower = topic.lower()
     for key, value in knowledge_base.items():
-        # Substring matching favors maintainability over a heavier retrieval
-        # stack: adding support for a new topic only requires a new dictionary
-        # entry, and common phrases containing that key will continue to work.
+        # Substring matching is intentional here: fixtures can use natural user
+        # phrasing, while maintainers only need to add one canonical key and
+        # summary when expanding the deterministic knowledge base.
         if key in topic_lower:
             return {"topic": topic, "summary": value}
 
-    # Return a structured fallback instead of raising an exception. This keeps
-    # the tool contract stable for the agent and lets the LLM explain the
-    # limitation to the user without breaking the conversation flow.
+    # Preserve the same response shape for unknown topics. The agent can then
+    # relay a graceful limitation message instead of handling tool exceptions or
+    # missing keys differently from successful lookups.
     return {
         "topic": topic,
         "summary": f"I have limited information about '{topic}'. It's a topic worth exploring further using specialized resources.",
@@ -85,8 +87,8 @@ researcher_agent = Agent(
 
 Always use the available tools before answering from your own knowledge.
 """,
-    # Register the deterministic helper functions as ADK tools. The model can
-    # invoke these before responding, which keeps the agent behavior aligned with
-    # the evaluation fixtures and avoids unsupported free-form answers.
+    # Expose only deterministic helpers as tools for this teaching agent. Requiring
+    # tool use keeps responses tied to the fixtures and prevents the model from
+    # inventing unsupported details outside the local knowledge base.
     tools=[get_current_date, lookup_topic],
 )
