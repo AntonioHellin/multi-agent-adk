@@ -1,12 +1,13 @@
 # Module 7 - Google ADK Multi-Agent System
 
-A simple multi-agent system built with [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/) featuring a root orchestrator agent with two specialized sub-agents.
+A simple multi-agent system built with [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/) featuring a root orchestrator agent with three specialized sub-agents.
 
 ## Features
 
-- **Multi-Agent Architecture**: Root agent orchestrates two specialized sub-agents
+- **Multi-Agent Architecture**: Root agent orchestrates three specialized sub-agents
 - **Greeter Agent**: Handles greetings, introductions, and casual conversation
 - **Researcher Agent**: Answers factual questions with tool-backed knowledge lookups
+- **Calculator Agent**: Safely evaluates arithmetic expressions with a deterministic tool
 - **ADK Dev UI**: Built-in web interface for testing and debugging agents
 - **Evaluation Suite**: Automated tests for agent quality
 - **Cloud Run Deployment**: Containerized deployment to Google Cloud Run
@@ -15,20 +16,20 @@ A simple multi-agent system built with [Google Agent Development Kit (ADK)](http
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────┐
-│              Root Agent                     │
-│         (Orchestrator)                      │
-│  Delegates based on user intent             │
-└──────────┬──────────────────┬───────────────┘
-           │                  │
-    ┌──────▼──────┐    ┌──────▼──────┐
-    │   Greeter   │    │ Researcher  │
-    │   Agent     │    │   Agent     │
-    │             │    │             │
-    │ - Greetings │    │ - Facts     │
-    │ - Intros    │    │ - Lookups   │
-    │ - Casual    │    │ - Date/Time │
-    └─────────────┘    └─────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                         Root Agent                          │
+│                       (Orchestrator)                        │
+│              Delegates based on user intent                 │
+└──────────┬──────────────────┬───────────────┬───────────────┘
+           │                  │               │
+    ┌──────▼──────┐    ┌──────▼──────┐ ┌──────▼──────┐
+    │   Greeter   │    │ Researcher  │ │ Calculator  │
+    │   Agent     │    │   Agent     │ │   Agent     │
+    │             │    │             │ │             │
+    │ - Greetings │    │ - Facts     │ │ - Arithmetic│
+    │ - Intros    │    │ - Lookups   │ │ - Safe eval │
+    │ - Casual    │    │ - Date/Time │ │ - Math      │
+    └─────────────┘    └─────────────┘ └─────────────┘
 ```
 
 ## Project Structure
@@ -39,6 +40,9 @@ module-7/
 │   ├── __init__.py               # Exposes root_agent
 │   ├── agent.py                  # Root orchestrator agent
 │   └── sub_agents/
+│       ├── calculator/
+│       │   ├── __init__.py
+│       │   └── agent.py          # Calculator sub-agent (safe arithmetic tool)
 │       ├── greeter/
 │       │   ├── __init__.py
 │       │   └── agent.py          # Greeter sub-agent
@@ -49,6 +53,7 @@ module-7/
 │   ├── greeter.test.json         # Greeter agent eval cases
 │   ├── researcher.test.json      # Researcher agent eval cases
 │   ├── test_config.json          # Evaluation criteria config
+│   ├── test_calculator_tools.py   # Unit tests for calculator tool safety
 │   └── test_eval.py              # Pytest test runner
 ├── start_dev_ui.sh               # Launch ADK Dev UI
 ├── run_agent.sh                  # Run agent in terminal
@@ -130,6 +135,11 @@ adk web .
 # Navigate to the Eval tab in the web interface
 ```
 
+
+### Calculator Tool Safety
+
+The calculator sub-agent uses a deterministic `calculate_expression` tool instead of relying on the language model for arithmetic. The tool parses expressions with Python's `ast` module and only permits numeric literals, parentheses, and basic arithmetic operators (`+`, `-`, `*`, `/`, `//`, `%`, `**`). Function calls, imports, variable access, and other Python code are rejected before evaluation.
+
 ## Evaluation
 
 The evaluation follows the [ADK evaluation framework](https://google.github.io/adk-docs/evaluate/) using `.test.json` files backed by the EvalSet/EvalCase Pydantic schema.
@@ -140,6 +150,7 @@ The evaluation follows the [ADK evaluation framework](https://google.github.io/a
 |------|-------|------------|
 | `greeter.test.json` | Greeter | `greeting_hello`, `greeting_introduction` |
 | `researcher.test.json` | Researcher | `research_python`, `research_kubernetes`, `research_adk` |
+| `test_calculator_tools.py` | Calculator | Tool-level tests for arithmetic, safety, and errors |
 
 ### Evaluation Criteria (`test_config.json`)
 
