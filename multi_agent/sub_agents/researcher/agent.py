@@ -6,13 +6,20 @@ from google.adk.agents import Agent
 
 
 def get_current_date() -> dict:
-    """Get the current date and time.
+    """Return the host machine's current date and time for ADK tool calls.
+
+    ADK serializes tool outputs before passing them back to the model, so keep
+    the payload limited to simple JSON-compatible values. Returning preformatted
+    strings for the date, time, and weekday gives the agent deterministic fields
+    to relay and avoids test fixtures depending on locale-specific parsing.
 
     Returns:
-        dict: A dictionary containing the current date and time in ISO format.
+        dict: Current date, current time, and day of week as formatted strings.
     """
     from datetime import datetime
 
+    # Read the clock inside the tool call rather than at import time; otherwise a
+    # long-lived agent process could return the startup timestamp to later users.
     now = datetime.now()
     return {
         "date": now.strftime("%Y-%m-%d"),
@@ -22,13 +29,20 @@ def get_current_date() -> dict:
 
 
 def lookup_topic(topic: str) -> dict:
-    """Look up information about a given topic. Returns a brief summary.
+    """Look up a short, deterministic summary for a requested topic.
+
+    The lookup table is deliberately small and local. That makes evaluation runs
+    reproducible: summaries do not drift with external services, and failures are
+    limited to this module instead of network availability. Topic matching is
+    case-insensitive and substring-based, so natural phrases such as "tell me
+    about Python" still resolve to the ``python`` entry while the returned
+    payload preserves the user's original wording.
 
     Args:
         topic: The topic to look up information about.
 
     Returns:
-        dict: A dictionary containing the topic and a brief summary about it.
+        dict: The original topic and either a known summary or a fallback note.
     """
     knowledge_base = {
         "python": "Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum in 1991.",
@@ -41,11 +55,19 @@ def lookup_topic(topic: str) -> dict:
         "machine learning": "Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed.",
     }
 
+    # Normalize the user's phrase once, then compare every canonical key against
+    # the same lowercase value for predictable case-insensitive matching.
     topic_lower = topic.lower()
     for key, value in knowledge_base.items():
+        # Substring matching is intentional here: fixtures can use natural user
+        # phrasing, while maintainers only need to add one canonical key and
+        # summary when expanding the deterministic knowledge base.
         if key in topic_lower:
             return {"topic": topic, "summary": value}
 
+    # Preserve the same response shape for unknown topics. The agent can then
+    # relay a graceful limitation message instead of handling tool exceptions or
+    # missing keys differently from successful lookups.
     return {
         "topic": topic,
         "summary": f"I have limited information about '{topic}'. It's a topic worth exploring further using specialized resources.",
@@ -65,5 +87,8 @@ researcher_agent = Agent(
 
 Always use the available tools before answering from your own knowledge.
 """,
+    # Expose only deterministic helpers as tools for this teaching agent. Requiring
+    # tool use keeps responses tied to the fixtures and prevents the model from
+    # inventing unsupported details outside the local knowledge base.
     tools=[get_current_date, lookup_topic],
 )
