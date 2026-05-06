@@ -14,6 +14,9 @@ from .sub_agents.calculator import calculator_agent
 from .sub_agents.greeter import greeter_agent
 from .sub_agents.researcher import researcher_agent
 
+# Keep the root agent as a pure router: it should interpret intent and hand off
+# to a specialist rather than generating end-user answers itself. This keeps each
+# sub-agent prompt focused and makes future routing changes easier to review.
 root_agent = Agent(
     name="root_agent",
     model="gemini-3-flash-preview",
