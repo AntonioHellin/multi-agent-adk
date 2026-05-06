@@ -1,14 +1,16 @@
 """
-Root Agent: Orchestrates the greeter and researcher sub-agents.
+Root Agent: Orchestrates the greeter, researcher, and calculator sub-agents.
 
 This is the main entry point for the multi-agent system built with Google ADK.
 The root agent delegates tasks to the appropriate sub-agent based on user intent:
 - Greeter: handles greetings, introductions, and casual conversation
 - Researcher: handles factual questions and knowledge lookups
+- Calculator: handles deterministic arithmetic and numeric expressions
 """
 
 from google.adk.agents import Agent
 
+from .sub_agents.calculator import calculator_agent
 from .sub_agents.greeter import greeter_agent
 from .sub_agents.researcher import researcher_agent
 
@@ -28,11 +30,11 @@ and delegate to the appropriate sub-agent:
 - **researcher**: For factual questions, knowledge lookups, technical questions, and informational queries.
   Delegate to researcher when the user wants to learn about a topic or needs factual information.
 
+- **calculator**: For arithmetic, numeric expressions, calculations, and math questions.
+  Delegate to calculator when the user asks you to compute, solve, total, divide, multiply, or evaluate numbers.
+
 Always delegate to one of the sub-agents. Do not try to answer questions yourself.
 If the intent is ambiguous, ask the user to clarify what they need help with.
 """,
-    # This list is the root agent's allowed delegation surface. The instruction
-    # above decides when to use each specialist; adding a sub-agent here makes it
-    # available for routing without changing the existing specialists.
-    sub_agents=[greeter_agent, researcher_agent],
+    sub_agents=[greeter_agent, researcher_agent, calculator_agent],
 )
