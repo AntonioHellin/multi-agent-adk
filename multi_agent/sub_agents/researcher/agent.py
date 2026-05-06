@@ -55,15 +55,10 @@ def lookup_topic(topic: str) -> dict:
         "machine learning": "Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed.",
     }
 
-    # Normalize the user's phrase once, then compare every canonical key against
-    # the same lowercase value for predictable case-insensitive matching.
-    topic_lower = topic.lower()
-    for key, value in knowledge_base.items():
-        # Substring matching is intentional here: fixtures can use natural user
-        # phrasing, while maintainers only need to add one canonical key and
-        # summary when expanding the deterministic knowledge base.
-        if key in topic_lower:
-            return {"topic": topic, "summary": value}
+    normalized_topic = topic.lower()
+    for known_topic, topic_summary in knowledge_base.items():
+        if known_topic in normalized_topic:
+            return {"topic": topic, "summary": topic_summary}
 
     # Preserve the same response shape for unknown topics. The agent can then
     # relay a graceful limitation message instead of handling tool exceptions or
