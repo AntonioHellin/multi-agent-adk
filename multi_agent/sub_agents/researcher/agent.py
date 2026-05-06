@@ -41,10 +41,10 @@ def lookup_topic(topic: str) -> dict:
         "machine learning": "Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed.",
     }
 
-    topic_lower = topic.lower()
-    for key, value in knowledge_base.items():
-        if key in topic_lower:
-            return {"topic": topic, "summary": value}
+    normalized_topic = topic.lower()
+    for known_topic, topic_summary in knowledge_base.items():
+        if known_topic in normalized_topic:
+            return {"topic": topic, "summary": topic_summary}
 
     return {
         "topic": topic,
