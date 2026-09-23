@@ -21,7 +21,7 @@ fi
 # Configuration
 PROJECT_ID="${GOOGLE_CLOUD_PROJECT:?GOOGLE_CLOUD_PROJECT is required}"
 REGION="${GOOGLE_CLOUD_REGION:-us-central1}"
-SERVICE_NAME="adk-multi-agent"
+SERVICE_NAME="google-adk-multi-agent"
 IMAGE_NAME="gcr.io/${PROJECT_ID}/${SERVICE_NAME}"
 
 echo "Deploying ADK Multi-Agent to Cloud Run"

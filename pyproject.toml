@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-adk-multi-agent"
+version = "0.1.0"
+description = "Multi-agent system built with Google Agent Development Kit (ADK) featuring orchestrator, greeter, researcher, and calculator agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "UNLICENSED" }
+authors = [
+    { name = "Antonio Hellin" }
+]
+dependencies = [
+    "google-adk[eval]>=1.26.0",
+    "python-dotenv>=1.2.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=1.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"

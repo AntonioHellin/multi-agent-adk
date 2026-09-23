@@ -15,6 +15,8 @@ from pathlib import Path
 import pytest
 
 from multi_agent.agent import root_agent
+from multi_agent.sub_agents.calculator import calculator_agent
+from multi_agent.sub_agents.calculator.agent import calculate_expression
 from multi_agent.sub_agents.greeter import greeter_agent
 from multi_agent.sub_agents.researcher import researcher_agent
 from multi_agent.sub_agents.researcher.agent import get_current_date, lookup_topic
@@ -31,7 +33,7 @@ EXPECTED_MODEL = "gemini-3-flash-preview"
             root_agent,
             "root_agent",
             "orchestrator",
-            ("delegate", "greeter", "researcher", "Always delegate"),
+            ("delegate", "greeter", "researcher", "calculator", "Always delegate"),
         ),
         (
             greeter_agent,
@@ -44,6 +46,12 @@ EXPECTED_MODEL = "gemini-3-flash-preview"
             "researcher",
             "factual questions",
             ("lookup_topic", "get_current_date", "Always use the available tools"),
+        ),
+        (
+            calculator_agent,
+            "calculator",
+            "arithmetic",
+            ("calculator assistant", "arithmetic", "calculate_expression"),
         ),
     ],
 )
@@ -62,15 +70,22 @@ def test_agent_metadata_and_instructions_are_configured(
 
 
 def test_root_agent_wires_exactly_the_expected_sub_agents():
-    """The orchestrator must be able to transfer to both specialized agents."""
+    """The orchestrator must be able to transfer to specialized agents."""
     sub_agents_by_name = {agent.name: agent for agent in root_agent.sub_agents}
 
-    assert set(sub_agents_by_name) == {"greeter", "researcher"}
+    assert set(sub_agents_by_name) == {"greeter", "researcher", "calculator"}
     assert sub_agents_by_name["greeter"] is greeter_agent
     assert sub_agents_by_name["researcher"] is researcher_agent
+    assert sub_agents_by_name["calculator"] is calculator_agent
     assert greeter_agent.parent_agent is root_agent
     assert researcher_agent.parent_agent is root_agent
+    assert calculator_agent.parent_agent is root_agent
     assert root_agent.tools == []
+
+
+def test_calculator_agent_registers_the_required_tools():
+    """Calculator agent should register only calculate_expression."""
+    assert calculator_agent.tools == [calculate_expression]
 
 
 def test_researcher_agent_registers_the_required_tools_in_order():
