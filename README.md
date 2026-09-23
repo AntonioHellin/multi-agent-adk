@@ -1,4 +1,4 @@
-# google-adk-multi-agent
+# multi-agent-sdk
 
 A modular, production-ready multi-agent system built with the [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/) featuring an orchestrator root agent and three specialized sub-agents.
 
@@ -79,8 +79,8 @@ google-adk-multi-agent/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/AntonioHellin/multi_agent_adk.git
-   cd multi_agent_adk
+   git clone https://github.com/AntonioHellin/multi-agent-sdk.git
+   cd multi-agent-sdk
    ```
 
 2. **Create and activate a virtual environment**:
