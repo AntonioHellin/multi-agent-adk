@@ -159,7 +159,3 @@ The included GitHub Actions workflow (`.github/workflows/ci-cd.yml`) executes on
 2. Authenticates to GCP using Workload Identity or Service Account keys.
 3. Builds and pushes container images to Google Container Registry (GCR).
 4. Deploys to Google Cloud Run and validates service health with an automated smoke test.
-
-## License
-
-Proprietary / All Rights Reserved.
